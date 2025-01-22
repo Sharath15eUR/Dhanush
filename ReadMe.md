@@ -1,4 +1,4 @@
-### EmbedUR Linux Training
+### EmbedUR Linux Training - Dhanush S M
 
 1. [Module 1 Assessment](module_1/ReadMe.md)
 2. [Module 2 Assessment](module_2/ReadMe.md)
