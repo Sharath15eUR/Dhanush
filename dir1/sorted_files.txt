@@ -1,0 +1,7 @@
+total 4
+-rw-r--r-- 1 dhanushsm dhanushsm    0 Jan 22 22:38 sorted_files.txt
+-rw-r--r-- 1 dhanushsm dhanushsm    0 Jan 22 22:37 file3.txt
+-rw-r--r-- 1 dhanushsm dhanushsm    0 Jan 22 22:36 file2.txt
+-rw-r--r-- 1 dhanushsm dhanushsm    0 Jan 22 22:36 file1.txt
+lrwxrwxrwx 1 dhanushsm dhanushsm   18 Jan 22 22:15 softlinkfile.txt -> dir1/dir2/file.txt
+drwxr-xr-x 2 dhanushsm dhanushsm 4096 Jan 22 22:14 dir2
