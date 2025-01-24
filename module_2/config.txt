@@ -1,0 +1,10 @@
+# Application Configuration File
+server_name=localhost
+database_host=localhost
+api_base_url=http://localhost:8080/api
+admin_panel_url=https://localhost/admin
+log_level=INFO
+enable_caching=true
+max_connections=100
+timeout=30
+

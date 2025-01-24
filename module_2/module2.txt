@@ -1,0 +1,102 @@
+EmbedUR Linux Training - Module 2
+
+------------------------------------------------------------------------------------------------------------------------
+
+1. Use the appropriate command to list all files larger than 1 MB in the current directory and save the output to a file.
+
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_2 git-[ main]-  find . -type f -size +1M > large_files.txt
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_2 git-[ main]-  cat large_files.txt
+───────┬────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: large_files.txt
+───────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ ./Tower-Night.png
+───────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+- find . → Searches in the current directory.
+- type f → Limits the search to files only.
+- size +1M → Finds files larger than 1 MB.
+
+------------------------------------------------------------------------------------------------------------------------
+
+2. Replace all occurrences of "localhost" with "127.0.0.1" in a configuration file named config.txt, and save the updated file as updated_config.txt.
+
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_2 git-[ main]-  cat config.txt
+───────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: config.txt
+───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ # Application Configuration File
+   2   │ server_name=localhost
+   3   │ database_host=localhost
+   4   │ api_base_url=http://localhost:8080/api
+   5   │ admin_panel_url=https://localhost/admin
+   6   │ log_level=INFO
+   7   │ enable_caching=true
+   8   │ max_connections=100
+   9   │ timeout=30
+  10   │
+───────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_2 git-[ main]-  sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt
+
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_2 git-[ main]-  cat config.txt
+───────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: config.txt
+───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ # Application Configuration File
+   2   │ server_name=localhost
+   3   │ database_host=localhost
+   4   │ api_base_url=http://localhost:8080/api
+   5   │ admin_panel_url=https://localhost/admin
+   6   │ log_level=INFO
+   7   │ enable_caching=true
+   8   │ max_connections=100
+   9   │ timeout=30
+  10   │
+───────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_2 git-[ main]-  sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt
+
+------------------------------------------------------------------------------------------------------------------------
+
+3. Use the appropriate command to search for lines containing the word "ERROR" in a log file but exclude lines containing "DEBUG". Save the results to a file named
+filtered_log.txt.
+
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_2 git-[ main]-  grep "ERROR" log | grep -v "DEBUG" > filtered_log.txt
+
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_2 git-[ main]-  cat filtered_log.txt
+───────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: filtered_log.txt
+───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ ERROR: Unable to connect to the database.
+   2   │ ERROR: Failed to fetch data from API endpoint '/users'.
+   3   │ ERROR: Missing required parameter in the request.
+───────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+- grep "ERROR" log → Filters lines containing the word "ERROR" from log.
+- grep -v "DEBUG" → Excludes lines containing "DEBUG".
+- > filtered_log.txt → Saves the results in filtered_log.txt.
+
+------------------------------------------------------------------------------------------------------------------------
+
+4. Write a code to identify the process with the highest memory usage and then terminate it.
+
+./process_terminator.sh
+
+- ps --sort=-%mem -eo pid → Lists processes sorted by memory usage in descending order, displaying only the PID.
+- head -2 | tail -1 → Gets the PID of the top process (skipping the header).
+- kill -9 "$highest_mem_pid" → Forcefully terminates the process.
+
+------------------------------------------------------------------------------------------------------------------------
+
+5. Use the networking tool command and print all the gateway available in a sorted manner
+
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_2 git-[ main]-  ip route | grep "default" | awk '{print $3}' | sort
+
+10.17.0.1
+
+- ip route → Displays routing table information.
+- grep "default" → Filters lines containing "default" (gateway routes).
+- awk '{print $3}' → Extracts the gateway IP address (third column).
+- sort → Sorts the gateways in ascending order
+
+------------------------------------------------------------------------------------------------------------------------
+
+

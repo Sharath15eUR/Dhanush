@@ -1,0 +1,10 @@
+# Application Configuration File
+server_name=127.0.0.1
+database_host=127.0.0.1
+api_base_url=http://127.0.0.1:8080/api
+admin_panel_url=https://127.0.0.1/admin
+log_level=INFO
+enable_caching=true
+max_connections=100
+timeout=30
+

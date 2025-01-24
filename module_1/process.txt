@@ -1,0 +1,313 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.2  0.0  22092 13272 ?        Ss   20:31   0:01 /usr/lib/systemd/systemd --switched-root --system --deserialize=47
+root           2  0.0  0.0      0     0 ?        S    20:31   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    20:31   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-netns]
+root           9  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/0:1-rcu_gp]
+root          10  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/0:0H-events_highpri]
+root          11  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/u32:0-ext4-rsv-conversion]
+root          12  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/u32:1-ext4-rsv-conversion]
+root          13  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-mm_pe]
+root          14  0.0  0.0      0     0 ?        I    20:31   0:00 [rcu_tasks_kthread]
+root          15  0.0  0.0      0     0 ?        I    20:31   0:00 [rcu_tasks_rude_kthread]
+root          16  0.0  0.0      0     0 ?        I    20:31   0:00 [rcu_tasks_trace_kthread]
+root          17  0.0  0.0      0     0 ?        S    20:31   0:00 [ksoftirqd/0]
+root          18  0.1  0.0      0     0 ?        I    20:31   0:01 [rcu_preempt]
+root          19  0.0  0.0      0     0 ?        S    20:31   0:00 [rcub/0]
+root          20  0.0  0.0      0     0 ?        S    20:31   0:00 [migration/0]
+root          21  0.0  0.0      0     0 ?        S    20:31   0:00 [idle_inject/0]
+root          22  0.0  0.0      0     0 ?        S    20:31   0:00 [cpuhp/0]
+root          23  0.0  0.0      0     0 ?        S    20:31   0:00 [cpuhp/2]
+root          24  0.0  0.0      0     0 ?        S    20:31   0:00 [idle_inject/2]
+root          25  0.0  0.0      0     0 ?        S    20:31   0:00 [migration/2]
+root          26  0.0  0.0      0     0 ?        S    20:31   0:00 [ksoftirqd/2]
+root          28  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/2:0H-events_highpri]
+root          29  0.0  0.0      0     0 ?        S    20:31   0:00 [cpuhp/4]
+root          30  0.0  0.0      0     0 ?        S    20:31   0:00 [idle_inject/4]
+root          31  0.0  0.0      0     0 ?        S    20:31   0:00 [migration/4]
+root          32  0.0  0.0      0     0 ?        S    20:31   0:00 [ksoftirqd/4]
+root          34  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/4:0H-kblockd]
+root          35  0.0  0.0      0     0 ?        S    20:31   0:00 [cpuhp/6]
+root          36  0.0  0.0      0     0 ?        S    20:31   0:00 [idle_inject/6]
+root          37  0.0  0.0      0     0 ?        S    20:31   0:00 [migration/6]
+root          38  0.0  0.0      0     0 ?        S    20:31   0:00 [ksoftirqd/6]
+root          40  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/6:0H-events_highpri]
+root          41  0.0  0.0      0     0 ?        S    20:31   0:00 [cpuhp/8]
+root          42  0.0  0.0      0     0 ?        S    20:31   0:00 [idle_inject/8]
+root          43  0.0  0.0      0     0 ?        S    20:31   0:00 [migration/8]
+root          44  0.0  0.0      0     0 ?        S    20:31   0:00 [ksoftirqd/8]
+root          46  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/8:0H-events_highpri]
+root          47  0.0  0.0      0     0 ?        S    20:31   0:00 [cpuhp/10]
+root          48  0.0  0.0      0     0 ?        S    20:31   0:00 [idle_inject/10]
+root          49  0.0  0.0      0     0 ?        S    20:31   0:00 [migration/10]
+root          50  0.0  0.0      0     0 ?        S    20:31   0:00 [ksoftirqd/10]
+root          52  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/10:0H-events_highpri]
+root          53  0.0  0.0      0     0 ?        S    20:31   0:00 [cpuhp/1]
+root          54  0.0  0.0      0     0 ?        S    20:31   0:00 [idle_inject/1]
+root          55  0.0  0.0      0     0 ?        S    20:31   0:00 [migration/1]
+root          56  0.0  0.0      0     0 ?        S    20:31   0:00 [ksoftirqd/1]
+root          58  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/1:0H-events_highpri]
+root          59  0.0  0.0      0     0 ?        S    20:31   0:00 [cpuhp/3]
+root          60  0.0  0.0      0     0 ?        S    20:31   0:00 [idle_inject/3]
+root          61  0.0  0.0      0     0 ?        S    20:31   0:00 [migration/3]
+root          62  0.0  0.0      0     0 ?        S    20:31   0:00 [ksoftirqd/3]
+root          64  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/3:0H-events_highpri]
+root          65  0.0  0.0      0     0 ?        S    20:31   0:00 [cpuhp/5]
+root          66  0.0  0.0      0     0 ?        S    20:31   0:00 [idle_inject/5]
+root          67  0.0  0.0      0     0 ?        S    20:31   0:00 [migration/5]
+root          68  0.0  0.0      0     0 ?        S    20:31   0:00 [ksoftirqd/5]
+root          69  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/5:0-rcu_gp]
+root          70  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/5:0H-events_highpri]
+root          71  0.0  0.0      0     0 ?        S    20:31   0:00 [cpuhp/7]
+root          72  0.0  0.0      0     0 ?        S    20:31   0:00 [idle_inject/7]
+root          73  0.0  0.0      0     0 ?        S    20:31   0:00 [migration/7]
+root          74  0.0  0.0      0     0 ?        S    20:31   0:00 [ksoftirqd/7]
+root          76  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/7:0H-events_highpri]
+root          77  0.0  0.0      0     0 ?        S    20:31   0:00 [cpuhp/9]
+root          78  0.0  0.0      0     0 ?        S    20:31   0:00 [idle_inject/9]
+root          79  0.0  0.0      0     0 ?        S    20:31   0:00 [migration/9]
+root          80  0.0  0.0      0     0 ?        S    20:31   0:00 [ksoftirqd/9]
+root          82  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/9:0H-events_highpri]
+root          83  0.0  0.0      0     0 ?        S    20:31   0:00 [cpuhp/11]
+root          84  0.0  0.0      0     0 ?        S    20:31   0:00 [idle_inject/11]
+root          85  0.0  0.0      0     0 ?        S    20:31   0:00 [migration/11]
+root          86  0.0  0.0      0     0 ?        S    20:31   0:00 [ksoftirqd/11]
+root          87  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/11:0-mm_percpu_wq]
+root          88  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/11:0H-events_highpri]
+root          89  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/u33:0-events_unbound]
+root          91  0.0  0.0      0     0 ?        S    20:31   0:00 [kdevtmpfs]
+root          92  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-inet_]
+root          94  0.0  0.0      0     0 ?        S    20:31   0:00 [kauditd]
+root          95  0.0  0.0      0     0 ?        S    20:31   0:00 [khungtaskd]
+root          96  0.0  0.0      0     0 ?        S    20:31   0:00 [oom_reaper]
+root          97  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/u33:2-events_unbound]
+root          98  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-write]
+root          99  0.0  0.0      0     0 ?        S    20:31   0:00 [kcompactd0]
+root         100  0.0  0.0      0     0 ?        SN   20:31   0:00 [ksmd]
+root         101  0.0  0.0      0     0 ?        SN   20:31   0:00 [khugepaged]
+root         102  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-kinte]
+root         103  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-kbloc]
+root         104  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-blkcg]
+root         105  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/1:1-events]
+root         107  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-tpm_d]
+root         108  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-ata_s]
+root         109  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-edac-]
+root         110  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-devfr]
+root         111  0.0  0.0      0     0 ?        S    20:31   0:00 [watchdogd]
+root         112  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/2:1H-kblockd]
+root         113  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/2:1-cgroup_destroy]
+root         114  0.0  0.0      0     0 ?        S    20:31   0:00 [kswapd0]
+root         115  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-kthro]
+root         116  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/3:1-events]
+root         120  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/8:1-cgroup_destroy]
+root         121  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/9:1-events]
+root         124  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-acpi_]
+root         125  0.0  0.0      0     0 ?        S    20:31   0:00 [scsi_eh_0]
+root         126  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-scsi_]
+root         128  0.0  0.0      0     0 ?        S    20:31   0:00 [scsi_eh_1]
+root         130  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-scsi_]
+root         131  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-mld]
+root         133  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-ipv6_]
+root         140  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-kstrp]
+root         141  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-zswap]
+root         142  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/u35:0-hci0]
+root         143  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/u36:0-rb_allocator]
+root         144  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/u37:0-rb_allocator]
+root         146  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-charg]
+root         147  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/4:1H-kblockd]
+root         149  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/6:1H-kblockd]
+root         150  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/3:1H-kblockd]
+root         162  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/8:1H-kblockd]
+root         187  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/0:1H-kblockd]
+root         193  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/10:1H-kblockd]
+root         194  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/u34:1-events_unbound]
+root         199  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/7:1H-kblockd]
+root         203  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/8:2-events]
+root         238  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/11:1H-kblockd]
+root         268  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/1:1H-kblockd]
+root         269  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/4:2-cgroup_destroy]
+root         278  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/5:1H-kblockd]
+root         287  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/9:1H-kblockd]
+root         321  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-crypt]
+root         323  0.0  0.0      0     0 ?        S    20:31   0:00 [nv_queue]
+root         324  0.0  0.0      0     0 ?        S    20:31   0:00 [nv_queue]
+root         325  0.0  0.0      0     0 ?        S    20:31   0:00 [nv_open_q]
+root         326  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/38-MSFT0001:00]
+root         327  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-nvme-]
+root         328  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-nvme-]
+root         329  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-nvme-]
+root         330  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-nvme-]
+root         332  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/6:3-events]
+root         335  0.4  0.0      0     0 ?        S    20:31   0:04 [nvidia-modeset/kthread_q]
+root         336  0.0  0.0      0     0 ?        S    20:31   0:00 [nvidia-modeset/deferred_close_kthread_q]
+root         341  0.0  0.0      0     0 ?        S    20:31   0:00 [UVM global queue]
+root         342  0.0  0.0      0     0 ?        S    20:31   0:00 [UVM deferred release queue]
+root         343  0.0  0.0      0     0 ?        S    20:31   0:00 [UVM Tools Event Queue]
+root         344  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/76-nvidia]
+root         345  0.0  0.0      0     0 ?        S    20:31   0:00 [nvidia]
+root         346  0.0  0.0      0     0 ?        S    20:31   0:00 [nv_queue]
+root         367  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/u34:3-events_power_efficient]
+root         368  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/7:3-events]
+root         370  0.0  0.0      0     0 ?        S    20:31   0:00 [jbd2/nvme0n1p2-8]
+root         371  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-ext4-]
+root         427  0.0  0.1  82312 24472 ?        Ss   20:31   0:00 /usr/lib/systemd/systemd-journald
+root         462  0.0  0.0  14592  6016 ?        Ss   20:31   0:00 /usr/lib/systemd/systemd-userdbd
+root         467  0.0  0.0      0     0 ?        S    20:31   0:00 [psimon]
+systemd+     470  0.0  0.0  89388  7680 ?        Ssl  20:31   0:00 /usr/lib/systemd/systemd-timesyncd
+root         477  0.0  0.0  35464 10752 ?        Ss   20:31   0:00 /usr/lib/systemd/systemd-udevd
+root         478  0.0  0.0      0     0 ?        S    20:31   0:00 [psimon]
+root         585  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/R-cfg80]
+root         597  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/81-iwlwifi:default_queue]
+root         598  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/82-iwlwifi:queue_1]
+root         599  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/83-iwlwifi:queue_2]
+root         600  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/84-iwlwifi:queue_3]
+root         601  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/85-iwlwifi:queue_4]
+root         602  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/86-iwlwifi:queue_5]
+root         603  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/87-iwlwifi:queue_6]
+root         604  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/88-iwlwifi:queue_7]
+root         605  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/89-iwlwifi:queue_8]
+root         606  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/90-iwlwifi:queue_9]
+root         607  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/91-iwlwifi:queue_10]
+root         608  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/92-iwlwifi:queue_11]
+root         609  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/93-iwlwifi:queue_12]
+root         610  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/94-iwlwifi:exception]
+root         616  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/u35:2-hci0]
+root         619  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/11:3-events]
+root         620  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/9:2-inet_frag_wq]
+root         658  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/u37:1]
+dbus         666  0.0  0.0   8524  4264 ?        Ss   20:31   0:00 /usr/bin/dbus-broker-launch --scope system --audit
+dbus         667  0.0  0.0   6212  3564 ?        S    20:31   0:00 dbus-broker --log 4 --controller 9 --machine-id 448217ad339543dc9aa9367268d8805f --max-bytes 536870912 --max-fds 4096 --max-matches 131072 --audit
+avahi        669  0.0  0.0   6436  3948 ?        Ss   20:31   0:00 avahi-daemon: running [dhanush-82b5.local]
+root         670  0.0  0.0  10176  5484 ?        Ss   20:31   0:00 /usr/lib/bluetooth/bluetoothd
+root         673  0.0  0.2 139484 48432 ?        Ssl  20:31   0:00 /usr/bin/python /usr/bin/firewalld --nofork --nopid
+root         674  0.7  0.0  10624  8192 ?        SNs  20:31   0:07 /usr/bin/preload --foreground --verbose 1
+root         675  0.0  0.0  15528  7988 ?        Ss   20:31   0:00 /usr/lib/systemd/systemd-logind
+avahi        716  0.0  0.0   6436  1280 ?        S    20:31   0:00 avahi-daemon: chroot helper
+root        1837  0.0  0.1 413272 24744 ?        Ssl  20:31   0:00 /usr/bin/NetworkManager --no-daemon
+polkitd     1886  0.0  0.0 382168 11760 ?        Ssl  20:31   0:00 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+root        1900  0.0  0.0  16524 11136 ?        Ss   20:31   0:00 /usr/bin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root        1901  0.3  0.2 114868 33152 ?        Ssl  20:31   0:02 /usr/bin/python /usr/bin/auto-cpufreq --daemon
+root        1906  0.0  0.0 310248 10972 ?        Ssl  20:31   0:00 /usr/bin/gdm
+root        1908  0.0  0.0   6632  1840 ?        Ss   20:31   0:00 /usr/bin/mount.ntfs /dev/sda1 /mnt/642C8DA42C8D71BA -o rw,nosuid,nodev
+root        1917  0.0  0.0 309404 11776 ?        Ssl  20:31   0:00 /usr/lib/accounts-daemon
+root        1929  0.0  0.0      0     0 ?        S    20:31   0:00 [psimon]
+root        1945  0.0  0.0   6632  2096 ?        Ss   20:31   0:00 /usr/bin/mount.ntfs /dev/sda2 /mnt/3462937862933E14 -o rw,nosuid,nodev
+rtkit       2013  0.0  0.0  21668  3200 ?        SNsl 20:31   0:00 /usr/lib/rtkit-daemon
+colord      2084  0.0  0.0 315168 15644 ?        Ssl  20:31   0:00 /usr/lib/colord
+root        2122  0.0  0.0 316924 12148 ?        Ssl  20:31   0:00 /usr/lib/upowerd
+root        2406  0.0  0.0      0     0 ?        S<   20:31   0:00 [krfcommd]
+root        2507  0.0  0.0 239384 12540 ?        Sl   20:31   0:00 gdm-session-worker [pam/gdm-password]
+root        2517  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/u36:1]
+dhanush+    2533  0.0  0.0  20500 11392 ?        Ss   20:32   0:00 /usr/lib/systemd/systemd --user
+dhanush+    2535  0.0  0.0  22284  3784 ?        S    20:32   0:00 (sd-pam)
+dhanush+    2543  0.0  0.3 553784 51976 ?        Ssl  20:32   0:00 /usr/bin/mpd --systemd
+dhanush+    2546  0.0  0.0 312892 13404 ?        SLsl 20:32   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+dhanush+    2554  0.0  0.0   7956  3712 ?        Ss   20:32   0:00 /usr/bin/dbus-broker-launch --scope user
+dhanush+    2555  0.0  0.0   4472  2304 ?        S    20:32   0:00 dbus-broker --log 4 --controller 10 --machine-id 448217ad339543dc9aa9367268d8805f --max-bytes 100000000000000 --max-fds 25000000000000 --max-matches 5000000000
+dhanush+    2576  0.0  0.0 232048  9760 tty2     Ssl+ 20:32   0:00 /usr/lib/gdm-x-session --register-session --run-script bspwm
+dhanush+    2578  1.2  0.5 25402256 83460 tty2   Sl+  20:32   0:12 /usr/lib/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+dhanush+    2612  0.0  0.0   3180  2172 tty2     S+   20:32   0:00 bspwm
+dhanush+    2662  0.0  0.0   2984  1792 ?        S    20:32   0:00 sxhkd -c /home/dhanushsm/.config/bspwm/src/config/sxhkdrc
+dhanush+    2693  0.0  0.1 473544 24504 ?        Ssl  20:32   0:00 /usr/bin/dunst
+dhanush+    2707  0.6  0.1 928272 27472 ?        Sl   20:32   0:05 polybar -q emi-bar -c /home/dhanushsm/.config/bspwm/rices/catppuccin/config.ini
+dhanush+    2709  1.2  0.5 310164 84828 ?        Rl   20:32   0:12 picom --config /home/dhanushsm/.config/bspwm/src/config/picom.conf
+dhanush+    2711  0.0  0.0   7812  4352 ?        S    20:32   0:00 xsettingsd --config=/home/dhanushsm/.config/bspwm/src/config/xsettingsd
+dhanush+    2715  0.2  0.0 1073747248 4864 ?     S    20:32   0:02 greenclip daemon
+dhanush+    2719  0.0  0.3 393400 55548 ?        Sl   20:32   0:00 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+dhanush+    2721  0.0  0.4 3116388 65240 ?       Sl   20:32   0:00 eww -c /home/dhanushsm/.config/bspwm/eww daemon
+root        2724  0.0  0.0      0     0 ?        S    20:32   0:00 [nvidia-drm/timeline-7]
+dhanush+    2725  0.0  0.0 101448 11740 ?        S<sl 20:32   0:00 /usr/bin/pipewire
+dhanush+    2726  0.0  0.2 761000 33316 ?        S<sl 20:32   0:00 /usr/bin/wireplumber
+dhanush+    2727  0.0  0.0  98248  8420 ?        S<sl 20:32   0:00 /usr/bin/pipewire-pulse
+dhanush+    2732  0.0  0.0 321984 14040 ?        Ssl  20:32   0:00 /usr/lib/gvfsd
+root        2748  0.0  0.0      0     0 ?        S    20:32   0:00 [nvidia-drm/timeline-8]
+dhanush+    2750  0.0  0.0 456024 10492 ?        Sl   20:32   0:00 /usr/lib/gvfsd-fuse /run/user/1000/gvfs -f
+root        2783  0.0  0.0      0     0 ?        S    20:32   0:00 [nvidia-drm/timeline-9]
+dhanush+    2786  0.0  0.0 380732  9628 ?        Ssl  20:32   0:00 /usr/lib/at-spi-bus-launcher
+dhanush+    2792  0.0  0.0   7956  3584 ?        S    20:32   0:00 /usr/bin/dbus-broker-launch --config-file=/usr/share/defaults/at-spi2/accessibility.conf --scope user
+dhanush+    2793  0.0  0.0   4100  2176 ?        S    20:32   0:00 dbus-broker --log 4 --controller 9 --machine-id 448217ad339543dc9aa9367268d8805f --max-bytes 100000000000000 --max-fds 6400000 --max-matches 5000000000
+dhanush+    2808  0.0  0.0 233772  7548 ?        Ssl  20:32   0:00 /usr/lib/at-spi2-registryd --use-gnome-session
+dhanush+    2850  3.2  2.3 34326196 383452 ?     SLsl 20:32   0:30 /opt/brave-bin/brave
+dhanush+    2852  0.0  0.0 33576116 3456 ?       Sl   20:32   0:00 /opt/brave-bin/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --database=/home/dhanushsm/.config/BraveSoftware/Brave-Browser/Crash Reports --url=https://cr.brave.com --annotation=lsb-release=EndeavourOS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=132.1.74.48 --initial-client-fd=6 --shared-client-connection
+dhanush+    2854  0.0  0.0 33567904 3168 ?       Sl   20:32   0:00 /opt/brave-bin/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/dhanushsm/.config/BraveSoftware/Brave-Browser/Crash Reports --url=https://cr.brave.com --annotation=lsb-release=EndeavourOS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=132.1.74.48 --initial-client-fd=4 --shared-client-connection
+dhanush+    2860  0.0  0.4 33897352 67312 ?      S    20:32   0:00 /opt/brave-bin/brave --type=zygote --no-zygote-sandbox --string-annotations --crashpad-handler-pid=2852 --enable-crash-reporter=, --change-stack-guard-on-fork=enable
+dhanush+    2861  0.0  0.4 33897340 67328 ?      S    20:32   0:00 /opt/brave-bin/brave --type=zygote --string-annotations --crashpad-handler-pid=2852 --enable-crash-reporter=, --change-stack-guard-on-fork=enable
+dhanush+    2863  0.0  0.1 33897364 17632 ?      S    20:32   0:00 /opt/brave-bin/brave --type=zygote --string-annotations --crashpad-handler-pid=2852 --enable-crash-reporter=, --change-stack-guard-on-fork=enable
+dhanush+    2886  0.0  0.0 305652  7608 ?        Ssl  20:32   0:00 /usr/lib/xdg-permission-store
+dhanush+    2908  0.0  0.1 473248 17928 ?        Ssl  20:32   0:00 /usr/lib/xdg-desktop-portal
+dhanush+    2913  2.9  1.6 34159920 260396 ?     Sl   20:32   0:28 /opt/brave-bin/brave --type=gpu-process --string-annotations --crashpad-handler-pid=2852 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --field-trial-handle=3,i,7185835469545438622,10890658879127644029,262144 --variations-seed-version=main@660c0bb4bb4505e44868c88679990305e8700c1a
+dhanush+    2915  0.9  0.7 34002160 128028 ?     Sl   20:32   0:08 /opt/brave-bin/brave --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-GB --service-sandbox-type=none --string-annotations --crashpad-handler-pid=2852 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7185835469545438622,10890658879127644029,262144 --variations-seed-version=main@660c0bb4bb4505e44868c88679990305e8700c1a
+dhanush+    2920  0.0  0.0 531600 10588 ?        Ssl  20:32   0:00 /usr/lib/xdg-document-portal
+root        2927  0.0  0.0   2560  1920 ?        Ss   20:32   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+dhanush+    2931  0.0  0.1 449424 26936 ?        Ssl  20:32   0:00 /usr/lib/xdg-desktop-portal-gtk
+dhanush+    2946  0.0  0.3 33956160 57004 ?      Sl   20:32   0:00 /opt/brave-bin/brave --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-GB --service-sandbox-type=utility --string-annotations --crashpad-handler-pid=2852 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7185835469545438622,10890658879127644029,262144 --variations-seed-version=main@660c0bb4bb4505e44868c88679990305e8700c1a
+root        2959  0.0  0.0      0     0 ?        S    20:32   0:00 [nvidia-drm/timeline-a]
+dhanush+    2985  0.0  0.8 1217983576 141864 ?   Sl   20:32   0:00 /opt/brave-bin/brave --type=renderer --string-annotations --crashpad-handler-pid=2852 --enable-crash-reporter=, --extension-process --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --brave_session_token=15652900676849972810 --lang=en-GB --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=8 --time-ticks-at-unix-epoch=-1737730903016067 --launch-time-ticks=24046772 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7185835469545438622,10890658879127644029,262144 --variations-seed-version=main@660c0bb4bb4505e44868c88679990305e8700c1a
+dhanush+    3045  0.0  0.2 34011936 39244 ?      S    20:32   0:00 /opt/brave-bin/brave --type=broker
+dhanush+    3638  0.0  0.0   7560  3584 ?        Ss   20:32   0:00 bash /home/dhanushsm/.config/bspwm/src/OpenApps --terminal
+dhanush+    3639  0.0  0.0   7560  3712 ?        S    20:32   0:00 bash /home/dhanushsm/.config/bspwm/src/Term --terminal
+dhanush+    3640  0.9  0.6 287308 102132 ?       Sl   20:32   0:08 kitty
+root        3641  0.0  0.0      0     0 ?        S    20:32   0:00 [nvidia-drm/timeline-b]
+dhanush+    3644  0.0  0.1 1907780 20436 ?       Sl   20:32   0:00 /usr/bin/kitten __atexit__
+dhanush+    3646  0.0  0.0  10372  6148 pts/0    Ss   20:32   0:00 /usr/bin/zsh
+dhanush+    3697  0.0  0.0   9936  4720 pts/0    S+   20:32   0:00 tmux -u
+dhanush+    3699  0.1  0.0  11032  4788 ?        Ss   20:32   0:01 tmux -u
+dhanush+    3749  0.4  0.0  11052  7408 pts/1    Ss   20:32   0:03 -zsh
+dhanush+    3854  1.1  2.0 5057400 340452 ?      Sl   20:32   0:11 /opt/spotify/spotify --class=scratch
+dhanush+    3877  0.0  0.5 519724 96488 ?        S    20:32   0:00 /opt/spotify/spotify --type=zygote --no-zygote-sandbox --no-sandbox --string-annotations --enable-crash-reporter=, --change-stack-guard-on-fork=enable --user-data-dir=/home/dhanushsm/.cache/spotify --log-severity=disable --user-agent-product=Chrome/131.0.6778.109 Spotify/1.2.53.440
+dhanush+    3879  0.0  0.5 519720 97368 ?        S    20:32   0:00 /opt/spotify/spotify --type=zygote --no-sandbox --string-annotations --enable-crash-reporter=, --change-stack-guard-on-fork=enable --user-data-dir=/home/dhanushsm/.cache/spotify --log-severity=disable --user-agent-product=Chrome/131.0.6778.109 Spotify/1.2.53.440
+dhanush+    3946  3.2  1.1 1938596 189024 ?      Sl   20:32   0:31 /opt/spotify/spotify --type=gpu-process --no-sandbox --string-annotations --enable-crash-reporter=, --change-stack-guard-on-fork=enable --user-data-dir=/home/dhanushsm/.cache/spotify --log-severity=disable --user-agent-product=Chrome/131.0.6778.109 Spotify/1.2.53.440 --gpu-preferences=UAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --field-trial-handle=3,i,16466981939729082775,18028376468048663318,262144 --disable-features=BackForwardCache,PartitionAllocDanglingPtr,PartitionAllocUnretainedDanglingPtr --variations-seed-version
+dhanush+    3950  0.2  0.8 1113896 135428 ?      Sl   20:32   0:01 /opt/spotify/spotify --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --string-annotations --enable-crash-reporter=, --change-stack-guard-on-fork=enable --user-data-dir=/home/dhanushsm/.cache/spotify --log-severity=disable --user-agent-product=Chrome/131.0.6778.109 Spotify/1.2.53.440 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,16466981939729082775,18028376468048663318,262144 --disable-features=BackForwardCache,PartitionAllocDanglingPtr,PartitionAllocUnretainedDanglingPtr --variations-seed-version
+dhanush+    4038  0.0  0.3 823504 61512 ?        Sl   20:32   0:00 /opt/spotify/spotify --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-US --service-sandbox-type=utility --no-sandbox --string-annotations --enable-crash-reporter=, --change-stack-guard-on-fork=enable --user-data-dir=/home/dhanushsm/.cache/spotify --log-severity=disable --user-agent-product=Chrome/131.0.6778.109 Spotify/1.2.53.440 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,16466981939729082775,18028376468048663318,262144 --disable-features=BackForwardCache,PartitionAllocDanglingPtr,PartitionAllocUnretainedDanglingPtr --variations-seed-version
+root        4594  0.0  0.0      0     0 ?        S    20:32   0:00 [nvidia-drm/timeline-c]
+dhanush+    4658 30.2  2.5 1215981872 412500 ?   Sl   20:32   4:49 /opt/spotify/spotify --type=renderer --string-annotations --enable-crash-reporter=, --change-stack-guard-on-fork=enable --user-data-dir=/home/dhanushsm/.cache/spotify --log-severity=disable --user-agent-product=Chrome/131.0.6778.109 Spotify/1.2.53.440 --no-sandbox --autoplay-policy=no-user-gesture-required --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6 --time-ticks-at-unix-epoch=-1737730903016068 --launch-time-ticks=29245900 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,16466981939729082775,18028376468048663318,262144 --disable-features=BackForwardCache,PartitionAllocDanglingPtr,PartitionAllocUnretainedDanglingPtr --variations-seed-version
+dhanush+    6186  1.1  1.5 1218056872 254460 ?   Sl   20:32   0:10 /opt/brave-bin/brave --type=renderer --string-annotations --crashpad-handler-pid=2852 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --brave_session_token=15652900676849972810 --lang=en-GB --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=16 --time-ticks-at-unix-epoch=-1737730903016067 --launch-time-ticks=64408892 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7185835469545438622,10890658879127644029,262144 --variations-seed-version=main@660c0bb4bb4505e44868c88679990305e8700c1a
+dhanush+    6268  6.2  3.2 1218100920 535336 ?   Sl   20:32   0:57 /opt/brave-bin/brave --type=renderer --string-annotations --crashpad-handler-pid=2852 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --brave_session_token=15652900676849972810 --lang=en-GB --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=20 --time-ticks-at-unix-epoch=-1737730903016067 --launch-time-ticks=66690677 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7185835469545438622,10890658879127644029,262144 --variations-seed-version=main@660c0bb4bb4505e44868c88679990305e8700c1a
+dhanush+    7134  0.0  0.7 1216302912 124500 ?   Sl   20:32   0:00 /opt/brave-bin/brave --type=renderer --string-annotations --crashpad-handler-pid=2852 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --brave_session_token=15652900676849972810 --lang=en-GB --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=21 --time-ticks-at-unix-epoch=-1737730903016067 --launch-time-ticks=69902651 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7185835469545438622,10890658879127644029,262144 --variations-seed-version=main@660c0bb4bb4505e44868c88679990305e8700c1a
+dhanush+    7162  0.0  0.5 34029840 88796 ?      Sl   20:32   0:00 /opt/brave-bin/brave --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-GB --service-sandbox-type=none --string-annotations --crashpad-handler-pid=2852 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7185835469545438622,10890658879127644029,262144 --variations-seed-version=main@660c0bb4bb4505e44868c88679990305e8700c1a
+dhanush+   11433  0.3  1.1 1218044232 184800 ?   Sl   20:34   0:02 /opt/brave-bin/brave --type=renderer --string-annotations --crashpad-handler-pid=2852 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --brave_session_token=15652900676849972810 --lang=en-GB --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=38 --time-ticks-at-unix-epoch=-1737730903016067 --launch-time-ticks=164742595 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7185835469545438622,10890658879127644029,262144 --variations-seed-version=main@660c0bb4bb4505e44868c88679990305e8700c1a
+dhanush+   12430  0.0  0.0  10848  6748 pts/2    Ss   20:34   0:00 -zsh
+root       20679  0.0  0.0      0     0 ?        I    20:37   0:00 [kworker/2:0-mm_percpu_wq]
+root       20683  0.0  0.0      0     0 ?        I    20:37   0:00 [kworker/10:2-events]
+root       20717  0.0  0.0      0     0 ?        I    20:37   0:00 [kworker/5:2]
+root       20794  0.0  0.0      0     0 ?        I    20:37   0:00 [kworker/u33:3-iou_exit]
+dhanush+   21888  0.0  0.0   7560  3584 ?        Ss   20:37   0:00 bash /home/dhanushsm/.config/bspwm/src/OpenApps --terminal
+dhanush+   21889  0.0  0.0   7560  3584 ?        S    20:37   0:00 bash /home/dhanushsm/.config/bspwm/src/Term --terminal
+dhanush+   21890  0.1  0.6 270748 108148 ?       Sl   20:37   0:01 kitty
+root       21891  0.0  0.0      0     0 ?        S    20:37   0:00 [nvidia-drm/timeline-10]
+dhanush+   21895  0.0  0.1 1981768 25036 ?       Sl   20:37   0:00 /usr/bin/kitten __atexit__
+dhanush+   21900  0.0  0.0  10860  7348 pts/3    Ss   20:37   0:00 /usr/bin/zsh
+root       22865  0.0  0.0      0     0 ?        I    20:37   0:00 [kworker/0:0-cgroup_destroy]
+dhanush+   22906  0.0  0.0  13168  7936 pts/3    S+   20:37   0:00 nvim ReadMe.md
+dhanush+   22907  0.9  0.2  40128 36028 ?        Ss   20:37   0:05 nvim --embed ReadMe.md
+root       23989  0.0  0.0      0     0 ?        I    20:38   0:00 [kworker/3:0-cgroup_destroy]
+root       24941  0.0  0.0      0     0 ?        I    20:38   0:00 [kworker/1:0-inet_frag_wq]
+root       26838  0.0  0.0      0     0 ?        I    20:39   0:00 [kworker/4:0-rcu_gp]
+root       27001  0.0  0.0      0     0 ?        I    20:39   0:00 [kworker/8:0-cgroup_destroy]
+dhanush+   28112  0.0  0.0  13036  7936 pts/2    S+   20:39   0:00 nvim module1.txt
+dhanush+   28113  1.1  0.2  37196 32724 ?        Ss   20:39   0:05 nvim --embed module1.txt
+root       31087  0.0  0.0      0     0 ?        I    20:40   0:00 [kworker/6:0-events]
+root       35190  0.0  0.0      0     0 ?        I    20:41   0:00 [kworker/u34:0-flush-259:0]
+root       37129  0.0  0.0      0     0 ?        I    20:42   0:00 [kworker/7:1-cgroup_destroy]
+root       37130  0.0  0.0      0     0 ?        I    20:42   0:00 [kworker/10:1-events]
+root       38131  0.0  0.0      0     0 ?        I    20:42   0:00 [kworker/11:1-inet_frag_wq]
+root       39102  0.0  0.0      0     0 ?        I    20:43   0:00 [kworker/0:2-cgroup_destroy]
+root       40228  0.0  0.0      0     0 ?        I    20:43   0:00 [kworker/5:1]
+root       41089  0.0  0.0      0     0 ?        I    20:43   0:00 [kworker/3:2]
+root       43175  0.0  0.0      0     0 ?        I    20:44   0:00 [kworker/1:2-events]
+root       43242  0.0  0.0  15160  6400 ?        S    20:44   0:00 systemd-userwork: waiting...
+root       45212  0.0  0.0      0     0 ?        I    20:45   0:00 [kworker/2:2]
+root       46259  0.0  0.0  15160  6272 ?        S    20:45   0:00 systemd-userwork: waiting...
+root       47184  0.0  0.0      0     0 ?        I    20:45   0:00 [kworker/4:1]
+root       49173  0.0  0.0      0     0 ?        I    20:46   0:00 [kworker/11:2]
+root       49219  0.0  0.0  15156  6528 ?        S    20:46   0:00 systemd-userwork: waiting...
+dhanush+   50241  0.0  0.4 1216237080 75020 ?    Sl   20:46   0:00 /opt/brave-bin/brave --type=renderer --string-annotations --crashpad-handler-pid=2852 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --brave_session_token=15652900676849972810 --lang=en-GB --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=43 --time-ticks-at-unix-epoch=-1737730903016067 --launch-time-ticks=914934058 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7185835469545438622,10890658879127644029,262144 --variations-seed-version=main@660c0bb4bb4505e44868c88679990305e8700c1a
+root       51384  0.0  0.0      0     0 ?        I    20:47   0:00 [kworker/u33:1-iou_exit]
+root       51418  0.0  0.0      0     0 ?        I    20:47   0:00 [kworker/u33:4-events_unbound]
+root       51419  0.0  0.0      0     0 ?        I    20:47   0:00 [kworker/u33:5-events_unbound]
+root       53300  0.0  0.0      0     0 ?        I    20:47   0:00 [kworker/9:0-events]
+dhanush+   53437  0.4  0.1 104972 24064 ?        Ss   20:48   0:00 /usr/bin/appimagelauncherd
+dhanush+   53483  0.0  0.0  10104  4712 pts/1    R+   20:48   0:00 ps -aux
