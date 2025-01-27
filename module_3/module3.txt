@@ -1,0 +1,31 @@
+EmbedUR Linux Training - Module 3
+
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3 git-[ main]-  mkdir src
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3 git-[ main]-  mkdir backup
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3 git-[ main]-  cd src
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3/src git-[ main]-  nvim sample.txt
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3/src git-[ main]-  ls
+sample.txt
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3/src git-[ main]-  cd ..
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3 git-[ main]-  nvim backup_manager.sh
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3 git-[ main]-  chmod +x backup_manager.sh
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3 git-[ main]-  cd src
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3/src git-[ main]-  touch hello.sh
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3/src git-[ main]-  ls
+hello.sh  sample.txt
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3/src git-[ main]-  cd ..
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3 git-[ main]-  ./backup_manager.sh "src" "backup" ".txt"
+Files to be backed up:
+sample.txt - 14 bytes
+Backup completed successfully. Report saved to backup/backup_report.log
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_3/backup git-[ main]-  cat backup_report.log
+───────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: backup_report.log
+───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ Backup Summary Report
+   2   │ ---------------------
+   3   │ Total files processed: 1
+   4   │ Total files backed up: 1
+   5   │ Total size of files backed up: 14 bytes
+   6   │ Backup directory: backup
+───────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
