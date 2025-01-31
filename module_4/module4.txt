@@ -1,0 +1,7 @@
+EmbedUR Linux Training - Module 4
+
+-------------------------------------------------------------------------------------------------------------
+
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_4 git-[ main]-  ./fetch_parameters.sh input.txt
+Processing complete. Output saved in output.txt
+
