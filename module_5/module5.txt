@@ -1,0 +1,47 @@
+EmbedUR Linux Training Module 5
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_5 git-[ main]-  mkdir -p logs/subdir
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_5 git-[ main]-  echo "Error 404" > logs/error.log
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_5 git-[ main]-  echo "Error 404: Debugging neede" > logs/subdir/debug.log
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_5 git-[ main]-  echo "Script execution successful. No errors were found" > logs/subdir/info.log
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_5 git-[ main]-  nvim file_analyzer.sh
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_5 git-[ main]-  chmod u+x file_analyzer.sh
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_5 git-[ main]-  ./file_analyzer.sh --help
+Usage: ./file_analyzer.sh [options]
+
+Options:
+  -d <directory>   Directory to search for files.
+  -k <keyword>     Keyword to search within files.
+  -f <file>        File to search the keyword directly.
+  --help           Show this help message.
+
+Example usage:
+  ./file_analyzer.sh -d logs -k error   # Recursively search for 'error' in 'logs' directory.
+  ./file_analyzer.sh -f script.sh -k TODO  # Search for 'TODO' in 'script.sh' file.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_5 git-[ main]-  ./file_analyzer.sh -d logs -k error
+Found 'error' in logs/subdir/info.log
+Found 'error' in logs/subdir/info.log
+Script name: ./file_analyzer.sh
+Number of arguments: 4
+Arguments passed: -d logs -k error
+Last exit status: 0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_5 git-[ main]-  nvim script.sh
+  dhanushsm   ~/Documents/EmbedUR_Linux_Training/module_5 git-[ main]-  ./file_analyzer.sh -f script.sh -k TODO
+Found 'TODO' in script.sh
+Script name: ./file_analyzer.sh
+Number of arguments: 4
+Arguments passed: -f script.sh -k TODO
+Last exit status: 0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
