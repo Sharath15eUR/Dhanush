@@ -76,13 +76,6 @@ nslookup www.cisco.com
 
 ![2.3](./images/2.3.png)
 
-#Use specific source IP:
-
-```bash
-
-traceroute -s <your_IP> www.google.com
-```
-
 # 3. Explore traceroute/tracert for different websites eg:google.com and analyse the parameters in the output and explore different options for traceroute command 
 
 ```bash
