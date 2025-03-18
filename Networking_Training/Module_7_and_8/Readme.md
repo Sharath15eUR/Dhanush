@@ -319,5 +319,144 @@ Router(config-if)# exit
 
 This applies the ACL to control incoming traffic on both interfaces.
 
+## 14. Try Static NAT, Dynamic NAT and PAT to translate IPs
+
+### Static NAT
+
+#### Network Topology
+
+![14.1](./images/14.2.png)
+
+#### Commands to configure NAT
+
+```
+# Select the internal interface
+ip nat inside
+
+# Select the external interface
+ip nat outside
+
+ip nat inside source static <ip-addr> <public-ip>
+```
+
+#### Web Browsing after configuring NAT
+
+![14.2](./images/14.3.png)
+
+#### NAT translations
+
+![14.3](./images/14.1.png)
+
+### Dynamic NAT
+
+
+#### Topology
+
+![14.4](./images/14.2.png)
+
+#### Configuration
+
+```
+# access list creation
+dhanush(config)#access-list 1 permit 192.168.1.0 0.0.0.255
+
+# pool creation
+dhanush(config)#ip nat pool DNAT 209.65.100.1 209.65.100.2 netmask 255.255.255.248
+
+# nat inside mapping
+dhanush(config)#int gigabitEthernet 0/0
+dhanush(config-if)#ip nat inside
+dhanush(config-if)#ex
+
+# nat outside mapping
+dhanush(config)#int gigabitEthernet 0/1
+dhanush(config-if)#ip nat outside
+dhanush(config-if)#ex
+
+# pool mapping
+dhanush(config)#ip nat inside source list 1 pool DNAT
+
+# nat translation check
+dhanush#sh ip nat trans
+```
+
+#### Ping Test from PC 1
+
+![14.5](./images/14.4.png)
+
+#### HTTP Request from PC 2
+
+![14.6](./images/14.5.png)
+
+#### NAT translation 
+
+![14.7](./images/14.6.png)
+
+### PAT
+
+#### Topology
+
+![14.8](./images/14.2.png)
+
+#### NAT Translation
+
+![14.9](./images/14.8.png)
+
+#### All three PCs can access the web page (Single IP with different ports has been used)
+
+![14.10](./images/14.9.png)
+
+## 15. Download iperf in laptop/phone and make sure they are in same network. Try different iperf commands with tcp, udp, birectional, reverse, multicast, parallel options and analyze the bandwidth and rate of transmission, delay, jitter etc.
+
+#### Basic TCP Test (default mode) 
+
+- This will send data for 10 seconds and measure the bandwidth.
+
+![tcp](./images/tcp.png)
+
+![tcp-server](./images/tcp-server.jpg)
+
+#### Reverse Mode (Windows Sends Data)
+
+- This makes the Windows server send data to Linux instead of the other way around.
+
+![rev](./images/rev.png)
+
+![rev-server](./images/rev-server.jpeg)
+
+#### Bidirectional Test (Both Upload & Download)
+
+- This tests upload & download speeds simultaneously.
+
+![bidir](./images/bidir.png)
+
+![bidir-server](./images/bidir-server.jpeg)
+
+#### UDP Test
+
+- Sends UDP traffic with 10 Mbps bandwidth.
+
+![udp](./images/udp.png)
+
+![udp-server](./images/udp-server.jpeg)
+
+#### Multicast Test
+
+- Sends 10 Mbps of multicast UDP traffic. 
+
+![multicast](./images/multicast.png)
+
+![multicast-server](./images/multicast-server.jpeg)
+
+#### Parallel Streams (Multiple Connections)
+
+- Runs 5 parallel connections to simulate real-world traffic.
+
+![parallel](./images/parallel.png)
+
+![parallel-server](./images/parallel-server.jpeg)
+
+
+
 
 
