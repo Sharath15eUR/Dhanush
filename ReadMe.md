@@ -14,7 +14,8 @@
 
 1. [Module 1 and 2 Assessment](Networking_Training/Module_1_and_2/Readme.md)
 1. [Module 3 and 4 Assessment](Networking_Training/Module_3_and_4/Readme.md)
-1. [Module 5 and 6 Assessment](Networking_Training/Module_5_and_6/Readme.md)
+1. [Module 5](Networking_Training/Module_5/Readme.md)
+1. [Module 6](Networking_Training/Module_6/Readme.md)
 1. [Module 7 and 8 Assessment](Networking_Training/Module_7_and_8/Readme.md)
 
 
