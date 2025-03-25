@@ -13,7 +13,7 @@ Wi-Fi operates primarily in the **Data Link Layer (Layer 2)** and **Physical Lay
 Common Wi-Fi devices include **smartphones, laptops, tablets, smart TVs, gaming consoles, and IoT devices**.
 
 - **Example: My Laptop's Wi-Fi Properties (Connected to Network)**
-After connecting to a Wi-Fi network, you can check wireless properties using:
+After connecting to a Wi-Fi network, we can check wireless properties using:
     - **Linux:** Run `iwconfig` or `iw dev wlan0 link`
     - **Windows:** Run `netsh wlan show interfaces` in CMD
 
