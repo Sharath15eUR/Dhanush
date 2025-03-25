@@ -18,4 +18,6 @@
 1. [Module 6](Networking_Training/Module_6/Readme.md)
 1. [Module 7 and 8 Assessment](Networking_Training/Module_7_and_8/Readme.md)
 
+### WiFi Training
 
+1. [Module 1 Assessment](Wifi_Training/Module_1/Readme.md)
