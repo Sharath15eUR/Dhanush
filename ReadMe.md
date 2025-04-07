@@ -22,3 +22,4 @@
 
 1. [Module 1 Assessment](Wifi_Training/Module_1/Readme.md)
 2. [Module 2 Assessment](Wifi_Training/Module_2/Readme.md)
+3. [Module 3 Assessment](Wifi_Training/Module_3/Readme.md)
