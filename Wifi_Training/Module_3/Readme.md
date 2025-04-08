@@ -133,13 +133,14 @@ Newer standards (n/ac/ax) include fields for:
 
 ## 11. Types of PPDU and Frame Formats
 
-| Wi-Fi Generation | PPDU Types          | Description                                      |
-|------------------|---------------------|--------------------------------------------------|
-| 802.11a/g        | Legacy              | Basic fields: Preamble + Header + Data          |
-| 802.11n          | HT-Mixed, HT-Green  | Adds MIMO support, backward compatibility       |
-| 802.11ac         | VHT PPDU            | High throughput, wider bandwidth, MU-MIMO       |
-| 802.11ax         | HE SU, HE MU, HE EXT| Adds OFDMA, Target Wake Time, spatial reuse     |
-| 802.11be         | EHT SU, EHT MU      |   Next-gen enhancements, supports up to 320 MHz channels and 16 spatial streams.   |
+| **Wi-Fi Generation** | **PPDU Types**           | **Description**                                                                 |
+|----------------------|--------------------------|---------------------------------------------------------------------------------|
+| **802.11b**          | **Long/Short Preamble**  | Legacy format with simple headers; uses DSSS modulation                        |
+| **802.11a/g**        | **Legacy**               | OFDM-based; fields include STF, LTF, Signal, Data (PSDU)                       |
+| **802.11n**          | **HT-Mixed, HT-Greenfield** | Adds MIMO support; HT-Mixed is backward-compatible with 802.11a/g           |
+| **802.11ac**         | **VHT PPDU**             | Very High Throughput; supports MU-MIMO, wider bandwidth      |
+| **802.11ax**         | **HE SU, HE MU, HE EXT** | High Efficiency; introduces OFDMA |
+| **802.11be**         | **EHT SU, EHT MU**       | Extremely High Throughput; supports up to 320 MHz channels, 16 spatial streams, enhanced OFDMA and MU-MIMO |
 
 > [!NOTE]
 > - HT- Mixed - High Throughput 
@@ -149,26 +150,125 @@ Newer standards (n/ac/ax) include fields for:
 > - EHT SU - Extremely High Throughput Single User
 > - EHT MU - Extremely High Throughput Multiple User
 
+
+### 802.11b Preamble and Header Fields
+
+![11.1](./images/11.1.png)
+
+#### **Preamble**
+- **SYNC (128/56 bits):** Syncs receiver with the signal.  
+- **SFD (16 bits):** Marks the start of the frame.
+
+#### **Header**
+- **Signal (8 bits):** Indicates data rate.  
+- **Service (8 bits):** Reserved for future use.  
+- **Length (8 bits):** Frame length in bytes.  
+- **CRC (8 bits):** Error check for header.
+
+---
+
+### 802.11a/g Preamble and Header Fields
+
+![11.2](./images/11.2.png)
+
+#### **Preamble**
+- **STF:** Syncs timing.  
+- **LTF:** Estimates channel.
+
+#### **Header (SIGNAL field)**
+- **Rate:** Modulation type.  
+- **Length:** Packet duration.  
+- **Parity:** Error bit.  
+- **Tail:** Ensures clean decoding.
+
+---
+
+### 802.11n Preamble and Header Fields
+
+![11.3](./images/11.3.png)
+
+#### **Legacy Preamble**
+- **L-STF:** Gain control and timing.  
+- **L-LTF:** Channel estimation.  
+- **L-SIG:** Info for legacy devices.
+
+#### **HT Preamble**
+- **HT-SIG1:** MCS, bandwidth, etc.  
+- **HT-STF:** Improves MIMO estimation.  
+- **HT-LTF:** MIMO channel estimation.
+
+#### **HT Header**
+- **HT-SIG2:** More signal info.  
+- **Service:** Reserved/init. bits.  
+- **Length:** PSDU length.  
+- **Tail:** Decoder reset.  
+- **CRC:** Error detection.
+
+---
+
+### 802.11ac Preamble and Header Fields
+
+![11.4](./images/11.4.png)
+
+#### **VHT Preamble**
+- **VHT-SIG-A1/A2:** MCS, streams, bandwidth.  
+- **VHT-STF:** MIMO estimation.  
+- **VHT-LTF:** Channel estimation & beamforming.
+
+#### **VHT Header**
+- **VHT-SIG-B:** PSDU length info.  
+- **Service:** Reserved/init. bits.  
+- **Tail:** Decoder reset.  
+- **CRC:** Error detection.
+
+---
+
+### 802.11ax Preamble and Header Fields
+
+![11.5](./images/11.5.png)
+
+#### **Preamble**
+- **HE-SIG-A:** MCS, bandwidth, streams.  
+- **HE-SIG-B:** MU-MIMO & OFDMA info.  
+- **HE-STF:** AGC improvement.  
+- **HE-LTF:** Channel estimation.
+
+#### **HE Header**
+- **Service:** Reserved/init. bits.  
+- **Tail:** Decoder reset.  
+- **CRC:** Error detection.
+
 ---
 
 ## 12. Data Rate Calculation
 
-**Formula:**
+### Formula:
 
-```
-Data Rate = (Bits per Symbol) × (Subcarriers) × (Spatial Streams) / (Symbol Duration)
-```
+$$
+\text{Data Rate} = \frac{N_{SD} \times N_{BPSCS} \times R \times N_{SS}}{T_{DFT} + T_{GI}}
+$$
 
-### For (802.11ac, 4x4 MIMO, 256-QAM, Short GI):
-- Bits/Symbol: 8 (256-QAM)
-- Subcarriers: 234
-- Streams: 4
-- Symbol Duration: 3.6 µs
+| Symbol        | Full Form                               | Description                                                                 |
+|---------------|------------------------------------------|-----------------------------------------------------------------------------|
+| `N_SD`        | Number of Data Subcarriers               | Subcarriers that actually carry data (depends on channel bandwidth)        |
+| `N_BPSCS`     | Number of Coded Bits Per Subcarrier      | Based on modulation:<br>BPSK = 1, QPSK = 2, 16-QAM = 4, 64-QAM = 6, 256-QAM = 8 |
+| `R`           | Coding Rate                              | Fraction of bits that are useful (e.g., 1/2, 3/4)                           |
+| `N_SS`        | Number of Spatial Streams                | Number of data streams sent simultaneously using MIMO                      |
+| `T_DFT`       | OFDM Symbol Duration (FFT/DFT Time)      | Base symbol time (e.g., 3.2 µs for 802.11n/ac/ax)                          |
+| `T_GI`        | Guard Interval Duration                  | Time gap between symbols to prevent ISI (e.g., 0.4 µs or 0.8 µs)           |
 
-```
-Data Rate = (8 × 234 × 4) / 3.6 µs ≈ 2.08 Gbps
-```
+### Calculation for (802.11ac, 20 MHz, 64-QAM, R = 3/4, 1 Stream, GI = 0.8 µs)
 
-Higher modulation (1024-QAM in 802.11ax) and more streams (up to 8) further increase data rate.
+- `N_SD = 52`
+- `N_BPSCS = 6` (64-QAM)
+- `R = 3/4`
+- `N_SS = 1`
+- `T_DFT = 3.2 µs`
+- `T_GI = 0.8 µs`
+
+$$ 
+\text{Data Rate} = \frac{52 \times 6 \times \frac{3}{4} \times 1}{3.2 + 0.8} = \frac{234}{4 \times 10^{-6}} = \frac{234 \times 10^6}{4} = \textbf{58.5 Mbps}
+$$
 
 ---
+
