@@ -1,5 +1,5 @@
 
-# MAC Layer and IEEE 802.11 Concepts
+# Module 4 Assignment: MAC Layer and IEEE 802.11 Concepts
 
 ---
 
@@ -188,9 +188,9 @@ unnecessary wake-ups and extending battery life.
 
 ## 8. Medium Access Control Methodologies
 
-### Techniques:
-
 The **Medium Access Control (MAC)** layer is responsible for controlling how data is transmitted over a shared wireless medium. The most common access methodologies in Wi-Fi networks are **CSMA/CA**, **DIFS/SIFS**, and **RTS/CTS**. These ensure fair and efficient communication between devices while avoiding collisions and optimizing channel usage.
+
+### Techniques:
 
 ### 1. CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance)
 
