@@ -24,4 +24,4 @@
 3. [Module 3 Assessment](Wifi_Training/Module_3/Readme.md)
 4. [Module 4 Assessment](Wifi_Training/Module_4/Readme.md)
 5. [Module 5 Assessment](Wifi_Training/Module_5/Readme.md)
-
+6. [Module 6 Assessment](Wifi_Training/Module_6/Readme.md)
