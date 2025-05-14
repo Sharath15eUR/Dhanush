@@ -64,7 +64,7 @@ void* threadC_func(void* arg) {
 }
 
 int main() {
-    signal(SIGINT, sigint_handler); // Handle Ctrl+C
+    signal(SIGINT, sigint_handler);
 
     pthread_t threadA, threadB, threadC;
 

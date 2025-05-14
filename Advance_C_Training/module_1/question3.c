@@ -14,7 +14,6 @@ int searchMatrix(int matrix[][100], int n, int key) {
     return 0;
 }
 
-// Example usage
 int main() {
     int n, key;
     int matrix[100][100];
